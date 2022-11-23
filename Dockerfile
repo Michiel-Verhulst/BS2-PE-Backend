@@ -8,3 +8,4 @@ FROM openjdk:18-slim
 COPY --from=BUILD /tmp/target/*.jar /catalog.jar
 EXPOSE 8080
 CMD java -jar /catalog.jar
+ 
